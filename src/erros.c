@@ -20,6 +20,16 @@ void trigger_stackoverflow() {
  trigger_stackoverflow(); // recursão infinita até estourar a pilha 
  }
 
- 
+ // ==========================
+// 2. SEGMENTATION FAULT
+// ==========================
+// Segfault ocorre quando acessamos memória inválida.
+// Aqui tentamos acessar um ponteiro NULL (endereço 0x0).
 
+
+void trigger_segfault() {
+    int *p = NULL;
+    printf("Antes do segfault\n");
+    printf("Valor: %d\n", *p);
+}
 
