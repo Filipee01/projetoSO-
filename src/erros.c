@@ -75,6 +75,11 @@ int counter = 0;
 void *increment(void *arg) {
     for(int i = 0; i < 100000; i++) {
         counter++;  // acesso simultâneo
+        
+    // pausa artificial aumenta chance de colisão
+    if (i % 100 == 0) { 
+        usleep(1);  
+        }
     }
     return NULL;
 }
