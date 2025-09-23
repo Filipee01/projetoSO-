@@ -52,14 +52,14 @@ projetoSO-/
 
 ### 🟢 Implementados e Funcionais
 
-| Erro                      | Descrição                                                       | Comportamento                              | Threads |
-| ------------------------- | --------------------------------------------------------------- | ------------------------------------------ | ------- |
-| 🧠 **Memory Leak**        | Demonstra alocação de memória que nunca é liberada              | Crescimento progressivo de memória         | ❌      |
-| 🏃‍♂️ **Race Condition**     | Múltiplas threads acessam recurso compartilhado simultaneamente | Comportamento não-determinístico           | ✅      |
-| 🔒 **Deadlock**           | Threads travadas esperando recursos umas das outras             | Bloqueio completo do programa              | ✅      |
-| 🔓 **Buffer Overflow**    | Escrita de dados além do limite do buffer                       | Possível sobrescrição de memória adjacente | ❌      |
-| 📊 **Stack Overflow**     | Excesso de chamadas recursivas ou alocação excessiva na stack   | Programa encerra abruptamente              | ❌      |
-| 💥 **Segmentation Fault** | Acesso indevido à memória (endereços inválidos)                 | Falha de segmentação                       | ❌      |
+| Erro                      | Descrição                                                       | Comportamento                              
+| ------------------------- | --------------------------------------------------------------- | ------------------------------------------ |
+| 🧠 **Memory Leak**        | Demonstra alocação de memória que nunca é liberada              | Crescimento progressivo de memória         | 
+| 🏃‍♂️ **Race Condition**     | Múltiplas threads acessam recurso compartilhado simultaneamente | Comportamento não-determinístico           |
+| 🔒 **Deadlock**           | Threads travadas esperando recursos umas das outras             | Bloqueio completo do programa              |
+| 🔓 **Buffer Overflow**    | Escrita de dados além do limite do buffer                       | Possível sobrescrição de memória adjacente |
+| 📊 **Stack Overflow**     | Excesso de chamadas recursivas ou alocação excessiva na stack   | Programa encerra abruptamente              |
+| 💥 **Segmentation Fault** | Acesso indevido à memória (endereços inválidos)                 | Falha de segmentação                       |
 
 > ⚠️ **Aviso de Segurança**: Os erros implementados podem afetar o desempenho do sistema. Execute com cautela e em ambiente controlado.
 
