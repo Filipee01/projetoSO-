@@ -58,8 +58,17 @@ void trigger_buffer_overflow() {
 
 void trigger_memory_leak() {
     printf("Memory leak em andamento...\n");
-    int *v = malloc(1000000 * sizeof(int));
-    // não liberamos intencionalmente
+    for (int i = 0; i < 10; i++) {
+        int *v = malloc(1000000 * sizeof(int)); // Aloca 1 milhão de inteiros
+        if (v == NULL) {
+            printf("Falha ao alocar memória.\n");
+            return;
+        }
+        printf("Iteração %d: Alocado 1 milhão de inteiros.\n", i + 1);
+        sleep(1); // Pausa para observar o crescimento do uso de memória
+        // Não liberamos intencionalmente
+    }
+    printf("Memory leak finalizado.\n");
 }
 
 // ==========================
