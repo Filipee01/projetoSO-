@@ -5,6 +5,10 @@
 int main() {
     int opcao;
 
+    printf("====================================\n\n");
+    printf("\t  EMULADOR DE ERROS\n\n");
+    printf("====================================\n\n");
+    
     printf("Escolha o erro a executar:\n");
     printf("1 - Stack Overflow\n");
     printf("2 - Segmentation Fault\n");
@@ -13,6 +17,7 @@ int main() {
     printf("5 - Condição de Corrida\n");
     printf("6 - Deadlock\n");
 
+    printf("escolha uma opcao :\a");
     scanf(" %d", &opcao);
    
 

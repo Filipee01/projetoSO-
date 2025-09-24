@@ -15,8 +15,11 @@
 // até ela "explodir".
 
 
+int count = 0;
+
 void trigger_stackoverflow() {
- printf("Stack overflow em andamento...\n");
+ printf("Stack overflow em andamento... (%d vezes)  \n",count);
+ count++;
  trigger_stackoverflow(); // recursão infinita até estourar a pilha 
  }
 
@@ -29,7 +32,7 @@ void trigger_stackoverflow() {
 
 void trigger_segfault() {
     int *p = NULL;
-    printf("Antes do segfault\n");
+    printf("Mensagem do sistema para o segmentation fault apos tentativa de acesso:\n");
     printf("Valor: %d\n", *p);
 }
 
