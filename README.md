@@ -1,4 +1,4 @@
-# Emulador de Erros de Sistema Operacional - projetoSO-
+# Emulador de Erros - Projeto Final da disciplina de Sistemas Operacionais.
 
 <div align="center">
 
@@ -35,11 +35,11 @@
 
 ## Descrição do Projeto
 
-Este projeto foi desenvolvido como uma **ferramenta educacional interativa** para demonstrar e simular diversos tipos de erros críticos que podem ocorrer em sistemas operacionais e programação de baixo nível.
+Este projeto foi desenvolvido para disciplina de Sistemas Operacionais, com foco em demonstrar e simular diversos tipos de erros críticos que podem ocorrer em sistemas operacionais.
 
-### Objetivo Educacional
+### Objetivo
 
-O emulador permite que estudantes, desenvolvedores e profissionais da área observem, de forma **prática e controlada**, o comportamento de códigos que geram erros críticos, incluindo:
+O emulador permite observar, de forma **prática**, o comportamento de códigos que geram erros críticos, incluindo:
 
 - **Stack Overflow** - Esgotamento da pilha de execução
 - **Segmentation Fault** - Violação de acesso à memória
@@ -47,13 +47,6 @@ O emulador permite que estudantes, desenvolvedores e profissionais da área obse
 - **Memory Leak** - Vazamento de memória
 - **Race Condition** - Condições de corrida entre threads
 - **Deadlock** - Bloqueio mútuo entre processos
-
-### Características Técnicas
-
-- **Linguagem**: C (ANSI C99)
-- **Threading**: POSIX Threads (pthread)
-- **Plataforma**: Multiplataforma (Windows, Linux, macOS)
-- **Propósito**: Educacional e demonstrativo
 
 ---
 
@@ -108,23 +101,7 @@ projetoSO-/
 │   ├── erros.c                 # Implementação dos erros
 │   └── Emulador_erros          # Executável compilado
 ├── 📄 README.md                # Documentação do projeto
-└── 📁 .git/                    # Controle de versão Git
 ```
-
----
-
-## Status dos Erros
-
-### Implementados e Funcionais
-
-| Erro                   | Descrição                                                       | Comportamento                              |
-| ---------------------- | --------------------------------------------------------------- | ------------------------------------------ |
-| **Stack Overflow**     | Excesso de chamadas recursivas que esgotam a pilha              | Programa encerra abruptamente              |
-| **Segmentation Fault** | Acesso indevido à memória (endereços inválidos)                 | Falha de segmentação                       |
-| **Buffer Overflow**    | Escrita de dados além do limite do buffer                       | Possível sobrescrição de memória adjacente |
-| **Memory Leak**        | Demonstra alocação de memória que nunca é liberada              | Crescimento progressivo de memória         |
-| **Race Condition**     | Múltiplas threads acessam recurso compartilhado simultaneamente | Comportamento não-determinístico           |
-| **Deadlock**           | Threads travadas esperando recursos umas das outras             | Bloqueio completo do programa              |
 
 ---
 
@@ -134,51 +111,30 @@ projetoSO-/
 
 #### Pré-requisitos
 
-- **GCC compiler** (MinGW-w64 no Windows, ou WSL)
-- **Build tools** (Visual Studio Build Tools ou WSL)
-- **Sistema Windows** com PowerShell ou WSL/Linux
+- **GCC compiler**
+- **Sistema Linux**
 
 #### Compilação e Execução
 
-**Opção 1: Windows com MinGW-w64**
+**No terminal do Linux**
 
 1. Clone o repositório:
 
-   ```powershell
+   ```bash
    git clone https://github.com/Filipee01/projetoSO-.git
    cd projetoSO-
    ```
 
 2. Compile o projeto:
 
-   ```powershell
-   gcc -o Emulador_erros src/main.c src/erros.c -Iinclude -lpthread
+   ```bash
+   gcc -o projetoSO src/main.c src/erros.c -Iinclude -lpthread
    ```
 
 3. Execute o programa:
+
    ```powershell
    .\Emulador_erros.exe
-   ```
-
-**Opção 2: WSL (Windows Subsystem for Linux)**
-
-1. Clone e navegue para o diretório:
-
-   ```bash
-   git clone https://github.com/Filipee01/projetoSO-.git
-   cd projetoSO-
-   ```
-
-2. Compile o projeto:
-
-   ```bash
-   gcc -o Emulador_erros src/main.c src/erros.c -Iinclude -lpthread
-   ```
-
-3. Execute o programa:
-
-   ```bash
-   ./Emulador_erros
    ```
 
 4. Escolha uma das opções no menu interativo para simular o erro correspondente.
@@ -203,18 +159,9 @@ Escolha o erro a executar:
 4 - Memory Leak
 5 - Condição de Corrida
 6 - Deadlock
-escolha uma opcao :
+0 - Sair
+escolha uma opcao:
 ```
-
-4. Escolha uma das opções no menu interativo para simular o erro correspondente.
-
----
-
-### Tecnologias Utilizadas
-
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Threads](https://img.shields.io/badge/POSIX-Threads-orange?style=for-the-badge)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
