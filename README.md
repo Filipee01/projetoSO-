@@ -133,8 +133,8 @@ projetoSO-/
 
 3. Execute o programa:
 
-   ```powershell
-   .\Emulador_erros.exe
+   ```bash
+   .\projetoSO
    ```
 
 4. Escolha uma das opções no menu interativo para simular o erro correspondente.
