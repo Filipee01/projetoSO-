@@ -15,7 +15,7 @@
 // até ela "explodir".
 
 
-int count = 0;
+int count= 0;
 
 void trigger_stackoverflow() {
  printf("Stack overflow em andamento... (%d vezes)  \n",count);
@@ -35,6 +35,7 @@ void trigger_segfault() {
     printf("Mensagem do sistema para o segmentation fault apos tentativa de acesso:\n");
     printf("Valor: %d\n", *p);
 }
+
 
 // ==========================
 // 3. BUFFER OVERFLOW
@@ -62,7 +63,7 @@ void trigger_buffer_overflow() {
 void trigger_memory_leak() {
     printf("Memory leak em andamento...\n");
     for (int i = 0; i < 10; i++) {
-        int *v = malloc(1000000 * sizeof(int)); // Aloca 1 milhão de inteiros
+        int *v = malloc(100000 * sizeof(int)); // Aloca muitos inteiros e nao libera
         if (v == NULL) {
             printf("Falha ao alocar memória.\n");
             return;
@@ -143,6 +144,5 @@ void trigger_deadlock() {
     pthread_join(t2, NULL);
     printf("Deadlock terminou (ou não)\n");
 }
-
 
 

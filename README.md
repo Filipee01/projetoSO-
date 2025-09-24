@@ -17,7 +17,7 @@
 
 ---
 
-## 📋 Divisão de Tarefas
+## Divisão de Tarefas
 
 | Atividade                                                | Responsável                              |
 | -------------------------------------------------------- | ---------------------------------------- |
@@ -125,8 +125,6 @@ projetoSO-/
 | **Memory Leak**        | Demonstra alocação de memória que nunca é liberada              | Crescimento progressivo de memória         |
 | **Race Condition**     | Múltiplas threads acessam recurso compartilhado simultaneamente | Comportamento não-determinístico           |
 | **Deadlock**           | Threads travadas esperando recursos umas das outras             | Bloqueio completo do programa              |
-
-> **Aviso de Segurança**: Os erros implementados podem afetar o desempenho do sistema. Execute com cautela e em ambiente controlado.
 
 ---
 
