@@ -128,13 +128,13 @@ projetoSO-/
 2. Compile o projeto:
 
    ```bash
-   gcc -o projetoSO src/main.c src/erros.c -Iinclude -lpthread
+   gcc -o projetoSO- src/main.c src/erros.c -Iinclude -lpthread
    ```
 
 3. Execute o programa:
 
    ```bash
-   .\projetoSO
+   .\projetoSO-
    ```
 
 4. Escolha uma das opções no menu interativo para simular o erro correspondente.
