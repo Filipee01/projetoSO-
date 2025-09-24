@@ -55,8 +55,6 @@ O emulador permite que estudantes, desenvolvedores e profissionais da área obse
 - **Plataforma**: Multiplataforma (Windows, Linux, macOS)
 - **Propósito**: Educacional e demonstrativo
 
-> **⚠️ Aviso de Segurança**: Este projeto simula erros que podem afetar o desempenho do sistema e causar travamentos. Execute sempre em ambiente controlado e salve seu trabalho antes dos testes.
-
 ---
 
 ## Detalhamento Técnico dos Erros
@@ -214,57 +212,6 @@ escolha uma opcao :
 
 ---
 
-## Resultados Esperados da Execução
-
-### Para Apresentação do Projeto
-
-Quando executar cada erro, você poderá demonstrar:
-
-**Stack Overflow (Opção 1)**
-
-- Mensagens de contagem crescente até o programa travar
-- Demonstra limitações da pilha de execução
-
-**Segmentation Fault (Opção 2)**
-
-- Mensagem de erro instantânea
-- Programa termina abruptamente demonstrando proteção de memória
-
-**Buffer Overflow (Opção 3)**
-
-- Execução aparentemente normal
-- Demonstra vulnerabilidade silenciosa de segurança
-
-**Memory Leak (Opção 4)**
-
-- Alocação progressiva com mensagens informativas
-- Use o gerenciador de tarefas para mostrar crescimento de memória
-
-**Race Condition (Opção 5)**
-
-- Resultado final incorreto (menor que 200.000)
-- Execute múltiplas vezes para mostrar variação
-
-**Deadlock (Opção 6)**
-
-- Programa "congela" sem resposta
-- Demonstra bloqueio permanente entre threads
-
----
-
----
-
-## Conclusão
-
-Este emulador de erros de sistema operacional oferece uma experiência prática e educativa sobre os principais problemas que podem afetar aplicações de baixo nível. Cada erro foi implementado de forma didática para facilitar o entendimento dos conceitos fundamentais de sistemas operacionais.
-
-### Contribuições Acadêmicas
-
-- **Visualização prática** de conceitos teóricos
-- **Ambiente controlado** para experimentação
-- **Demonstração interativa** de vulnerabilidades
-- **Ferramenta de ensino** para cursos de SO
-
 ### Tecnologias Utilizadas
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
@@ -274,9 +221,5 @@ Este emulador de erros de sistema operacional oferece uma experiência prática 
 ---
 
 <div align="center">
-
-**Desenvolvido para fins educacionais em Sistemas Operacionais**
-
-_Universidade - Disciplina de Sistemas Operacionais_
 
 </div>
